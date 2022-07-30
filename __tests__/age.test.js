@@ -37,4 +37,16 @@ describe('Age', () => {
     expect(newAge.jupiter()).toEqual(2);
   });
 
+  test('should take the age of the person ', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    expect(newAge.jupiter()).toEqual(2);
+  });
+
+  test('should use the mercury function to set the mercuryYears property when the Age object is constructed. ', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    expect(newAge.mercuryYears).toEqual(83);
+  });
+  
 });
