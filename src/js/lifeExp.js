@@ -20,7 +20,8 @@ export default class LifeExp extends Age {
   }
 
   calcMercExpect() {
-
+    let result = super.mercury(this.calcLifeExpect());
+    return parseFloat(result.toFixed(1));
   }
 
 }
