@@ -1,6 +1,9 @@
-export default class LifeExp {
-  constructor (obj) {    
-    this.age = obj.earthYears;
+import Age from './age.js';
+
+export default class LifeExp extends Age {
+  constructor (userYears) {    
+    super(userYears);
+    this.age = userYears;
     this.expect = 78.6
   }
 
@@ -16,5 +19,8 @@ export default class LifeExp {
     return parseFloat(result.toFixed(1));    
   }
 
+  calcMercExpect() {
+
+  }
 
 }
