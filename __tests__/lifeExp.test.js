@@ -10,6 +10,13 @@ describe('LifeExp', () => {
     expect(typeof(lifeEx)).toEqual('object');
   });
 
+  test('should initiliaze LifeExp object with a expect property that has a number value.', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(newAge);
+    expect(typeof(lifeEx.expect)).toEqual('number');
+  });
+
   test('should take in an age object as an argument and set the this.age property value from age.earthYears', () => {
     const years = 20;
     const newAge = new Age(years);
