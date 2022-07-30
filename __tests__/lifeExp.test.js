@@ -44,5 +44,12 @@ describe('LifeExp', () => {
     const lifeEx = new LifeExp(years);
     expect(lifeEx.calcMercExpect()).toEqual(244);
   });
+
+  test('should take the age property and return life expectation in venus years', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.calcVenusExpect()).toEqual(94.5);
+  });
   
 });
