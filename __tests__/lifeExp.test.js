@@ -58,4 +58,12 @@ describe('LifeExp', () => {
     const lifeEx = new LifeExp(years);
     expect(lifeEx.calcMarsExpect()).toEqual(31);
   });
+
+  test('should take the age property and return life expectation in jupiter years', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.calcJupExpect()).toEqual(5);
+  });
+
 });
