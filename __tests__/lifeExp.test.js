@@ -21,7 +21,14 @@ describe('LifeExp', () => {
     const years = 20;
     const newAge = new Age(years);
     const lifeEx = new LifeExp(newAge);
-    expect(lifeEx.calcLifeExpect).toEqual(58.6);
+    expect(lifeEx.calcLifeExpect()).toEqual(58.6);
+  });
+
+  test('should take the age property and return number of years past expectation if the age is greater than the life expectency', () => {
+    const years = 80;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(newAge);
+    expect(lifeEx.calcLifeExpect()).toEqual(1.4);
   });
 
 });
