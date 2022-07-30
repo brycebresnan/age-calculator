@@ -13,34 +13,34 @@ describe('Age', () => {
     expect(newAge.earthYears).toEqual(20);
   });
 
-  test('should take the Earth Years and return the equivalent in mercury years.', () => {
+  test('should take in years as an argument and return the equivalent in mercury years.', () => {
     const years = 20;
     const newAge = new Age(years);
-    expect(newAge.mercury()).toEqual(83);
+    expect(newAge.mercury(years)).toEqual(83);
   });
 
-  test('should take the Earth Years and return the equivalent in Venus years.', () => {
+  test('should take in years as an argument and return the equivalent in Venus years.', () => {
     const years = 20;
     const newAge = new Age(years);
-    expect(newAge.venus()).toEqual(32);
+    expect(newAge.venus(years)).toEqual(32);
   });
 
-  test('should take the Earth Years and return the equivalent in Mars years.', () => {
+  test('should take in years as an argument and return the equivalent in Mars years.', () => {
     const years = 20;
     const newAge = new Age(years);
-    expect(newAge.mars()).toEqual(11);
+    expect(newAge.mars(years)).toEqual(11);
   });
 
-  test('should take the Earth Years and return the equivalent in Jupiter years.', () => {
+  test('should take in years as an argument and return the equivalent in Jupiter years.', () => {
     const years = 20;
     const newAge = new Age(years);
-    expect(newAge.jupiter()).toEqual(2);
+    expect(newAge.jupiter(years)).toEqual(2);
   });
 
   test('should take the age of the person ', () => {
     const years = 20;
     const newAge = new Age(years);
-    expect(newAge.jupiter()).toEqual(2);
+    expect(newAge.jupiter(years)).toEqual(2);
   });
 
   test('should use the mercury function to set the mercuryYears property when the Age object is constructed. ', () => {
