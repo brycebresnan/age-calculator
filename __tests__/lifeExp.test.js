@@ -82,4 +82,12 @@ describe('LifeExp', () => {
     expect(lifeEx.marsLeft).toEqual(31);
     expect(lifeEx.jupLeft).toEqual(5);
   });
+
+  test('should take in "female" in the sex argument and adjust the average life expectancy in years by 1.06', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.expectancy('female')).toEqual(81.4);
+  });
+
 });
