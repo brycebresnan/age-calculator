@@ -6,7 +6,7 @@ export default class LifeExp {
 
   calcLifeExpect() {
     const currentAge = this.age;
-    const lifeExpect = 78.6;
+    const lifeExpect = this.expect;
     let result = 0;
     if (currentAge <= lifeExpect) {
       result = (lifeExpect - currentAge);
