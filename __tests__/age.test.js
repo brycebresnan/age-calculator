@@ -61,4 +61,10 @@ describe('Age', () => {
     expect(newAge.marsYears).toEqual(11);
   });
 
+  test('should use the jupiter function to set the jupiterYears property when the Age object is constructed. ', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    expect(newAge.jupiterYears).toEqual(2);
+  });
+
 });
