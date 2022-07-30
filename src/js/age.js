@@ -4,6 +4,6 @@ export default class Age {
   }
 
   mercury() {
-    return (this.earthYears * 0.24);
+    return (Math.round(this.earthYears / 0.24));
   }
 }
