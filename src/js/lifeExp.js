@@ -24,4 +24,9 @@ export default class LifeExp extends Age {
     return parseFloat(result.toFixed(1));
   }
 
+  calcVenusExpect() {
+    let result = super.venus(this.calcLifeExpect());
+    return parseFloat(result.toFixed(1));
+  }
+
 }
