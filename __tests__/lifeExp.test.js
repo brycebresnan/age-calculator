@@ -49,7 +49,13 @@ describe('LifeExp', () => {
     const years = 20;
     const newAge = new Age(years);
     const lifeEx = new LifeExp(years);
-    expect(lifeEx.calcVenusExpect()).toEqual(94.5);
+    expect(lifeEx.calcVenusExpect()).toEqual(95);
   });
   
+  test('should take the age property and return life expectation in mars years', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.calcMarsExpect()).toEqual(31);
+  });
 });
