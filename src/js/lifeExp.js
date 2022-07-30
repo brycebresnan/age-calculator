@@ -29,4 +29,9 @@ export default class LifeExp extends Age {
     return parseFloat(result.toFixed(1));
   }
 
+  calcMarsExpect() {
+    let result = super.mars(this.calcLifeExpect());
+    return parseFloat(result.toFixed(1));
+
+  }
 }
