@@ -44,4 +44,12 @@ export default class LifeExp extends Age {
     return parseFloat(result.toFixed(1));
   }
 
+  expectancy(sex) {
+    let result = 78.6
+    if (sex == "female") {
+      result *= 1.06;
+      return parseFloat(result.toFixed(1));
+    }
+  }
+
 }
