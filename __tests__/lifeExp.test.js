@@ -17,4 +17,11 @@ describe('LifeExp', () => {
     expect(lifeEx.age).toEqual(20);
   });
 
+  test('should take the age property and return number of remaining years if the age is less than the life expectency', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(newAge);
+    expect(lifeEx.calcLifeExpect).toEqual(58.6);
+  });
+
 });
