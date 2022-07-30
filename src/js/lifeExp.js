@@ -6,6 +6,10 @@ export default class LifeExp extends Age {
     this.age = userYears;
     this.expect = 78.6;
     this.lifeLeft = this.calcLifeExpect();
+    this.mercLeft = this.calcMercExpect();
+    this.venusLeft = this.calcVenusExpect();
+    this.marsLeft = this.calcMarsExpect();
+    this.jupLeft = this.calcJupExpect();
   }
 
   calcLifeExpect() {
