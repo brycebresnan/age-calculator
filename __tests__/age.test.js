@@ -55,4 +55,10 @@ describe('Age', () => {
     expect(newAge.venusYears).toEqual(32);
   });
 
+  test('should use the mars function to set the marsYears property when the Age object is constructed. ', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    expect(newAge.marsYears).toEqual(11);
+  });
+
 });
