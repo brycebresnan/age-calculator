@@ -1,4 +1,4 @@
-import lifeExp from './../src/js/lifeExp.js'
+import LifeExp from './../src/js/lifeExp.js';
 
 describe('LifeExp', () => {
 
