@@ -66,4 +66,11 @@ describe('LifeExp', () => {
     expect(lifeEx.calcJupExpect()).toEqual(5);
   });
 
+  test('should set the lifeLeft property as the result of the calcLifeExpect function when the constructor is initlized', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.lifeLeft).toEqual(58.6);
+  });
+
 });
