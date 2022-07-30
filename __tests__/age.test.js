@@ -48,5 +48,11 @@ describe('Age', () => {
     const newAge = new Age(years);
     expect(newAge.mercuryYears).toEqual(83);
   });
-  
+
+  test('should use the venus function to set the venusYears property when the Age object is constructed. ', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    expect(newAge.venusYears).toEqual(32);
+  });
+
 });
