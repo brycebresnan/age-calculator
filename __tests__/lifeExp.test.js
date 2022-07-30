@@ -73,4 +73,13 @@ describe('LifeExp', () => {
     expect(lifeEx.lifeLeft).toEqual(58.6);
   });
 
+  test('should set the various planet life left calculations as properties when the function is initilized', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.mercLeft).toEqual(244);
+    expect(lifeEx.venusLeft).toEqual(95);
+    expect(lifeEx.marsLeft).toEqual(31);
+    expect(lifeEx.jupLeft).toEqual(5);
+  });
 });
