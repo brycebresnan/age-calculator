@@ -2,6 +2,7 @@ export default class Age {
   constructor (userYears) {
     this.earthYears = userYears;
     this.mercuryYears = this.mercury();
+    this.venusYears = this.venus();
   }
 
   mercury() {
