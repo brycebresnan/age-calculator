@@ -4,7 +4,8 @@ export default class LifeExp extends Age {
   constructor (userYears) {    
     super(userYears);
     this.age = userYears;
-    this.expect = 78.6
+    this.expect = 78.6;
+    this.lifeLeft = this.calcLifeExpect();
   }
 
   calcLifeExpect() {
