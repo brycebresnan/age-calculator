@@ -13,4 +13,9 @@ describe('Age', () => {
     expect(newAge.earthYears).toEqual(20);
   });
 
+  test('should take the Earth Years and return the equivalent in mercury years.', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    expect(newAge.mercury()).toEqual(4.8);
+  });
 });
