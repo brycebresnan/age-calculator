@@ -104,4 +104,12 @@ describe('LifeExp', () => {
     expect(lifeEx.expectancy('male',true)).toEqual(45.7);
   });
 
+  test('should take in "true" in the smoker argument and  adjust the life expectancy by 0.6', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    lifeEx.expectancy('male',true);
+    expect(lifeEx.expect).toEqual(45.7);
+  });
+
 });
