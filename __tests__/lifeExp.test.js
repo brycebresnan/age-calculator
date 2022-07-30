@@ -38,4 +38,11 @@ describe('LifeExp', () => {
     expect(lifeEx.calcLifeExpect()).toEqual(1.4);
   });
 
+  test('should take the age property and return life expectation in mercury years', () => {
+    const years = 20;
+    const newAge = new Age(years);
+    const lifeEx = new LifeExp(years);
+    expect(lifeEx.calcMercExpect()).toEqual(244);
+  });
+  
 });
