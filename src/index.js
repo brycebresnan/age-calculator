@@ -13,7 +13,6 @@ window.addEventListener("load", function(){
 
 function getAgeFormData() {
   let userAge = parseInt(document.getElementById("ageInput").value);
-  console.log(userAge);
   return userAge;
 }
 
@@ -34,13 +33,15 @@ function ageDisplay(ageObject) {
 
 function lifeExpCalc(e) {
   e.preventDefault();
-  getExpFormData();
+  let liExpArray = getExpFormData();
+  let lifeExpect = new LifeExp(getAgeFormData());
+  lifeExpect.expectancy(liExpArray[0],liExpArray[1]);
+  console.log(lifeExpect);
 }
 
 function getExpFormData() {
 let sexCheck = document.querySelector("input[name='sex']:checked").value;
 let smokerCheck = document.querySelector("input[name='smoker']:checked").value;
 let returnArray = [sexCheck, smokerCheck];
-console.log(returnArray);
 return returnArray;
 }
