@@ -51,7 +51,7 @@ export default class LifeExp extends Age {
     } else {
       result *= 0.969;
     }
-    if (smoker == true) {
+    if (smoker == "true") {
       result *= 0.6;
     }
     result = parseFloat(result.toFixed(1));
