@@ -40,10 +40,10 @@ function lifeExpCalc(e) {
 }
 
 function getExpFormData() {
-let sexCheck = document.querySelector("input[name='sex']:checked").value;
-let smokerCheck = document.querySelector("input[name='smoker']:checked").value;
-let returnArray = [sexCheck, smokerCheck];
-return returnArray;
+  let sexCheck = document.querySelector("input[name='sex']:checked").value;
+  let smokerCheck = document.querySelector("input[name='smoker']:checked").value;
+  let returnArray = [sexCheck, smokerCheck];
+  return returnArray;
 }
 
 function lifeExpDisplay(expObj) {
