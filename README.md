@@ -2,7 +2,7 @@
 
 #### By Bryce Bresnan <Bryce.Bresnan@gmail.com>
 
-#### This is a project to demonstrate both Test Driven Development and Object Oriented Programming. In this web application, the user will input their age, and the calculator will show the equivalent age on other planets in the solar system. 
+#### This is a project to demonstrate both Test Driven Development and Object Oriented Programming. In this web application, the user will input their age and the calculator will show the equivalent age on other planets in the solar system as well as life expectancy for each planet based on user inputted biological information.
 
 
 ## Technologies Used
@@ -13,21 +13,18 @@
 * Markdown
 * Bootstrap
 * Jest
-
-## Specifications
-
-* 
-
+* npm
 
 ## Setup/Installation Requirements
 
 * Clone this repository from GitHub.
-* Navigate to the top level of the directory.
-* Open index.html in Google Chrome.
+* Run npm install to get relavant dependenceies.
+* Open main directory in VSCode.
+* Run "npm run start" script.
+
 
 ## Known Bugs
 
-* 
 
 ## License
 MIT License
