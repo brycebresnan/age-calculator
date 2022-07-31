@@ -7,8 +7,8 @@ import LifeExp from './js/lifeExp';
 window.addEventListener("load", function(){
   const ageForm = document.getElementById('userAge');
   ageForm.addEventListener("submit", ageCalc);
-  // const expForm = document.getElementById('lifeExpect');
-  // ageForm.addEventListener("submit", );
+  const expForm = document.getElementById('lifeExpect');
+  expForm.addEventListener("submit", lifeExpCalc);
 });
 
 function getAgeFormData() {
@@ -32,6 +32,15 @@ function ageDisplay(ageObject) {
   document.getElementById("jupiterAge").innerText = " " + ageObject.jupiterYears;
 }
 
+function lifeExpCalc(e) {
+  e.preventDefault();
+  getExpFormData();
+}
+
 function getExpFormData() {
-let smokerCheck = document.getElementById("ageInput").value
+let sexCheck = document.querySelector("input[name='sex']:checked").value;
+let smokerCheck = document.querySelector("input[name='smoker']:checked").value;
+let returnArray = [sexCheck, smokerCheck];
+console.log(returnArray);
+return returnArray;
 }
