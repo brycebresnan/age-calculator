@@ -45,14 +45,14 @@ export default class LifeExp extends Age {
   }
 
   expectancy(sex,smoker) {
-    let result = 78.6
+    let result = 78.6; //average life expectancy of an American
     if (sex == "female") {
       result *= 1.06;
     } else {
       result *= 0.969;
     }
     if (smoker == true) {
-      result *= 0.6
+      result *= 0.6;
     }
     result = parseFloat(result.toFixed(1));
     this.expect = result;
