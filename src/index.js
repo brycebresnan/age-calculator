@@ -7,8 +7,8 @@ import LifeExp from './js/lifeExp';
 window.addEventListener("load", function(){
   const ageForm = document.getElementById('userAge');
   ageForm.addEventListener("submit", ageCalc);
-  const expForm = document.getElementById('lifeExpect');
-  ageForm.addEventListener("submit", );
+  // const expForm = document.getElementById('lifeExpect');
+  // ageForm.addEventListener("submit", );
 });
 
 function getAgeFormData() {
@@ -21,8 +21,15 @@ function ageCalc(e) {
   e.preventDefault();
   let age = getAgeFormData();
   let galacticAge = new Age(age);
-  console.log(galacticAge);
-  return galacticAge;
+  ageDisplay(galacticAge);
+}
+
+function ageDisplay(ageObject) {
+  document.getElementById("earthAge").innerText = " " + ageObject.earthYears;
+  document.getElementById("mercuryAge").innerText = " " + ageObject.mercuryYears + " (wow...you're old!)";
+  document.getElementById("venusAge").innerText = " " + ageObject.venusYears;
+  document.getElementById("marsAge").innerText = " " + ageObject.marsYears;
+  document.getElementById("jupiterAge").innerText = " " + ageObject.jupiterYears;
 }
 
 function getExpFormData() {
